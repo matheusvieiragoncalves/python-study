@@ -11,10 +11,8 @@ context = ssl._create_unverified_context()
 with urllib.request.urlopen(url, context=context) as response:
     data = json.loads(response.read())
 
-# Valor do dólar em reais (BRL)
 oneDollarInReal = data["rates"]["BRL"]
 
 real = float(input('Enter with a value in real: '))
 
-print(f'This origial value is R$ {real:.2f} and value converted is $ {real * oneDollarInReal:.2f}')
-
+print(f'This origial value is R$ {real:.2f} and value converted is $ {real / oneDollarInReal:.2f}')
