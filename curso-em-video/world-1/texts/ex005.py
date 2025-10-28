@@ -4,7 +4,7 @@
 # - In which position it appears the first time.
 # - In which position it appears the last time.
 
-phrase = str(input('Enter a phrase: '))
+phrase = str(input('Enter a phrase: ')).strip()
 
 for i in range(len(phrase)):
   print(f'[{phrase[i].upper():^4}]', end="")
@@ -17,5 +17,5 @@ for i in range(len(phrase)):
 print("")
 
 print(f'The phrase has {phrase.lower().count('a')} letters "A"')
-print(f'The letters "A" find first in position {phrase.lower().find('a')}')
-print(f'The letters "A" find last in position {phrase.lower().rfind('a')}')
+print(f'The letters "A" find first in position {phrase.lower().find('a') + 1}')
+print(f'The letters "A" find last in position {phrase.lower().rfind('a') + 1}')
