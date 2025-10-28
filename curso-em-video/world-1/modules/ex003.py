@@ -6,6 +6,6 @@ from math import cos, sin, tan, radians
 angle = float(input('Type to angle: '))
 angleRad = radians(angle)
 
-print(f'This sine is {sin(angleRad):.0f}')
-print(f'This cosine is {cos(angleRad):.0f}')
-print(f'This tangent is {tan(angleRad):.0f}')
+print(f'This sine is {sin(angleRad):.2f}')
+print(f'This cosine is {cos(angleRad):.2f}')
+print(f'This tangent is {tan(angleRad):.2f}')

@@ -1,4 +1,4 @@
-# Exercise 003: Modules
+# Exercise 004: Modules
 # Create a progame to drew a name from 4 options
 
 from random import choice
