@@ -18,8 +18,8 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 '''
 
-class Solution:
-    def isPalindrome(self, x: int):
+class Solution1:  # Time Complexity: O(n) where n is the number of digits in the integer
+    def isPalindrome(self, x: int) -> bool:
         numberString = str(x)
         newNumberToCompare = ""
         for i in range(len(numberString) - 1, -1, -1):
@@ -32,4 +32,4 @@ class Solution:
 
 
 
-print(Solution().isPalindrome(121))
+print(Solution1().isPalindrome(121))
