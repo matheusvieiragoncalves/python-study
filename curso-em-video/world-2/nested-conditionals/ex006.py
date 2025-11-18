@@ -5,3 +5,22 @@
 # - Up to 19 years old: JUNIOR
 # - Up to 20 years old: SENIOR
 # - Above 20 years old: MASTER
+
+from datetime import datetime
+
+year_of_birth = int(input("Enter with your year of birht: "))
+
+current_year: int = datetime.now().year
+
+age: int = current_year - year_of_birth
+
+if age <= 9:
+    print("MIRIM")
+elif age <= 14:
+    print("CHILDREN")
+elif age <= 19:
+    print("JUNIOR")
+elif age <= 20:
+    print("SENIOR")
+else:
+    print("MASTER")

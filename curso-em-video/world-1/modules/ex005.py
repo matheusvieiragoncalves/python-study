@@ -1,9 +1,9 @@
 # Exercise 005: Modules
 # create a program to randomly sort the order of a list
 
-from random import randint, shuffle
+from random import shuffle
 
-names = ['Matheus', 'Giovanna', 'João', 'Maria']
+names: list[str] = ["Matheus", "Giovanna", "João", "Maria"]
 
 # count = 1
 
@@ -15,6 +15,6 @@ names = ['Matheus', 'Giovanna', 'João', 'Maria']
 #   names.remove(drawName)
 #   count += 1
 
-shuffle(names) # Embaralha
+shuffle(names)  # Embaralha
 
 print(names)
